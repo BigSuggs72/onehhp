@@ -1,0 +1,53 @@
+h1{
+    color: red;
+}
+.completed{
+    text-decoration: line-through;
+    color: gray;
+}
+.not{
+    text-decoration: underline;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(190, 190, 203);
+    font-family: "Edu TAS Beginner", sans-serif;
+    background-image: url("/images/books.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 20%;
+    background-size: 95% 100%;
+    background-size: cover;
+}
+
+.layout {
+    color: white;
+    width: 600px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    width: 600px;
+    padding: 20px;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 4rem;
+}
+
+a {
+    padding: 10px;
+    font-size: 2rem;
+}
