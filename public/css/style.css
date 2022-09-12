@@ -4,10 +4,10 @@
     box-sizing: border-box;
 }
 
-body {
-    background: rgb(180, 180, 192);
+.body, main {
+    background: hsl(240, 10%, 92%);
     font-family: "Edu TAS Beginner", sans-serif;
-
+    height: 100vh;
 }
 
 /* nav styling */
@@ -22,58 +22,138 @@ body {
 }
 
 
+/* error message */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-h1{
+.alert {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     color: red;
 }
+
+
+
+.login, .signup {
+    color: #000;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    border-radius: 5px;
+    width: 95%;
+    max-width: 500px;
+    margin: 100px 0 20px 0;
+    -moz-box-shadow: 0 0 10px 2px gray;
+    -webkit-box-shadow: 0 0 10px 2px gray;
+    box-shadow: 0 0 10px 2px gray;
+    padding: 25px;
+  }
+  
+  #login-form, #signup-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    border-radius: 5px;
+    width: 95%;
+    max-width: 350px;
+    margin: 20px auto;
+    padding: 25px;
+  }
+  
+  #login-form {
+    align-items: center;
+  }
+
+
+/* General styling for forms */
+
+input[type="text"], input[type="email"], input[type="password"] {
+    font-family: "Edu TAS Beginner", sans-serif;
+    font-size: 1.25rem;
+    margin: 0 0 10px 0;
+    padding: 5px;
+    width: 15rem;
+    height: 2rem;
+    border: 1px solid #889397;
+    border-radius: 3px;
+  }
+
+
+/* used on all form-submit buttons (login, signup, books) */
+.btn-submit {      
+    border-radius: 10px;
+    padding: .5rem 1.5rem;
+    font: inherit;  
+    cursor: pointer;
+    border: none;
+    align-self: center;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .btn-primary {
+    background: #3a7fdf;
+    color: #fff;
+  }
+  
+  .btn-secondary {
+    background-color: #F7B733;
+    color: #000;
+  }
+  
+  .btn-primary:hover {
+    background: #b6e1e9;
+    color: #000;
+  }
+  
+  .btn-secondary:hover {
+    background: #f4d79d;
+    color: #000;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .completed{
     text-decoration: line-through;
     color: gray;
