@@ -1,18 +1,26 @@
 const mongoose = require('mongoose')
 
-const BookSchema = new mongoose.Schema({
-  book: {
+const ExerciseSchema = new mongoose.Schema({
+  name: {
     type: String,
     required: true,
   },
-  completed: {
-    type: Boolean,
-    required: true,
-  },
-  userId: {
+  image: {
     type: String,
-    required: true
-  }
-})
+    require: true,
+  },
+  cloudinaryId: {
+    type: String,
+    require: true,
+  },
+  user: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "User",
+  },
+  createdAt: {
+    type: Date,
+    default: Date.now,
+  },
+});
 
-module.exports = mongoose.model('Book', BookSchema)
+module.exports = mongoose.model('Exercise', ExerciseSchema)
