@@ -1,16 +1,16 @@
 const express = require('express')
 const router = express.Router()
-const exercisesController = require('../controllers/exercises') 
+const exerciseController = require('../controllers/exercise') 
 const { ensureAuth } = require('../middleware/auth')
 
-router.get('/', ensureAuth, exercisesController.getTodos)
+router.get('/', ensureAuth, exerciseController.getExercise)
 
-router.post('/createTodo', exercisesController.createTodo)
+router.post('/createExercise', exerciseController.createExercise)
 
-router.put('/markComplete', exercisesController.markComplete)
+router.put('/markComplete', exerciseController.markComplete)
 
-router.put('/markIncomplete', exercisesController.markIncomplete)
+router.put('/markIncomplete', exerciseController.markIncomplete)
 
-router.delete('/deleteTodo', exercisesController.deleteTodo)
+router.delete('/deleteExercise', exerciseController.deleteExercise)
 
 module.exports = router
