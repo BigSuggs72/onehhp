@@ -35,8 +35,6 @@ footer {
 }
 
 
-/* HEADER */
-/* nav styling */
 .nav-list {
   display: flex;
   justify-content: center;
@@ -47,7 +45,61 @@ footer {
   font-size: 50px;
 }
 
+.logo img {
+  margin-right: auto;
+  max-height: 100%;
+  max-width: 35px;
+}
 
+/* .btn-login-signup {
+  padding-top: 30px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+} */
+
+/* MAIN SECTION*/
+
+.info-section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 40px 20px 20px 20px;
+  max-height: 100vh;
+  color: #000;
+}
+
+
+.info-container {
+  width: 30%;
+  text-align: center;
+}
+
+.info-container h1 h2 {
+  width: 200px;
+  margin: 50px;
+  width: 100px;
+  height: 100px;
+}
+
+
+.image-container img{
+  width: 400px;
+  height: 600px;
+  padding: 20px 20px 0 0;
+  border-radius: 50px;
+}
+
+
+/* Buttons */
+.btn-login-signup {
+  padding-top: 50px;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
 
 .btn-link {
   /* used on <a> tags styled as buttons */
@@ -61,35 +113,6 @@ footer {
   color: #fff;
 }
 
-/* MAIN SECTION*/
-
-.info-section {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 2rem;
-  padding: 40px 20px 20px 20px;
-  max-height: 100vh;
-  color: #000;
-}
-
-
-.info-container {
-  width: 30%;
-}
-.info-container h1 h2 {
-  width: 200px;
-  margin: 50px;
-  width: 100px;
-  height: 100px;
-}
-
-
-.image-container img{
-  width: 400px;
-  height: 600px;
-}
 
 
 /* FOOTER */
