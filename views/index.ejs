@@ -23,11 +23,19 @@
                 <div class="info-container">
                     <h1>BeActive</h1>
                     <h2>Customise your exercises for you!!!!</h2>
-                    <a href="/login" class="btn-link btn-primary"> Login</a>
-                    <a href="/signup" class="btn-link btn-primary"> SignUp</a>
+                    <ul class="btn-login-signup">
+                        <% if (currentUser) { %>
+                            <li><a href="/logout" class="btn-link btn-primary"> Logout</a></li>
+                            <% } else { %>
+                                <li><a href="/login" class="btn-link btn-primary"> Login</a></li>
+                                <li><a href="/signup" class="btn-link btn-secondary"> Signup</a></li>
+                                <% } %>
+                    </ul>
+                    <!-- <a href="/login" class="btn-link btn-primary"> Login</a>
+                    <a href="/signup" class="btn-link btn-primary"> SignUp</a> -->
                 </div>
                 <div class="image-container">
-                    <img src="/images/manwoman.jpg" alt="manwoman">
+                    <img src="https://images.unsplash.com/photo-1599552683573-9dc48255fe85?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGV4ZXJjaXNlfGVufDB8fDB8fA%3D%3D&w=1000&q=80" alt="manwoman">
                 </div>
             </section>
         </main>
@@ -43,16 +51,5 @@
             </div>
         </footer>
     </div>
-    <!-- <main class="page-layout">
-        <div class="index-container">
-            <h1>BeActive</h1>
-            <h2>Customize your exercises that suit you!</h2>
-        </div>
-        <div class="img">
-            <img src="/images/momdaugther.jpeg" alt="manwoman">
-        </div>
-        <a href="/login"> Login</a>
-        <a href="/signup" class="btn-link btn-primary">Signup</a>
-    </main> -->
 </body>
 </html>

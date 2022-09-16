@@ -65,7 +65,7 @@ footer {
 
 .info-section {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
   gap: 2rem;
@@ -74,14 +74,21 @@ footer {
   color: #000;
 }
 
-.info-container h2 {
-  margin-bottom: 2.5rem;
-  width: 50%;
+
+.info-container {
+  width: 30%;
+}
+.info-container h1 h2 {
+  width: 200px;
+  margin: 50px;
+  width: 100px;
+  height: 100px;
 }
 
-.img {
-  width: 500px;
-  height: 500px;
+
+.image-container img{
+  width: 400px;
+  height: 600px;
 }
 
 
