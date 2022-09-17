@@ -1,34 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css">
-    <title>LOGIN</title>
-</head>
-<main>
-    <% if (locals.messages.errors) { %>
-        <% messages.errors.forEach( el => { %>
-            <div class="alert alert-danger"><%= el.msg %></div>
-        <% }) %>    
-    <% } %>
-    <% if (locals.messages.info) { %>
-        <% messages.info.forEach( el => { %>
-            <div class="alert alert-danger"><%= el.msg %></div>
-        <% }) %>    
-    <% } %>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/css/style.css">
+        <title>LOGIN</title>
+    </head>
+    <body>
+        <div class="page-layout">
+            <header>
+                <nav class="nav-list">
+                    <a class="logo" href="/">
+                        <img src="https://media.istockphoto.com/photos/red-dumbbell-weights-picture-id173926553?s=612x612"
+                            alt="weights">
+                    </a>
+                    <span>BeActive</span>
+                </nav>
+            </header>
+            <main>
+                    <% if (locals.messages.errors) { %>
+                    <% messages.errors.forEach( el => { %>
+                <div class="alert alert-danger"><%= el.msg %></div>
+                    <% }) %>    
+                    <% } %>
+                    <% if (locals.messages.info) { %>
+                    <% messages.info.forEach( el => { %>
+                <div class="alert alert-danger"><%= el.msg %></div>
+                    <% }) %>    
+                    <% } %>
 
-    <section class="login" id="login-form">
-        <h1>Login</h1>
-        <form id="login-form" action="/login" method="POST">
-            <input type="email" name="email" placeholder="Email">
-            <input type="password" name="password" placeholder="Password">
-            <input class="btn-submit btn-primary" type="submit">
-        </form>
-    </section>
-    </main>
+                <section class="login" id="login-form">
+                    <h1>Login</h1>
+                        <form id="login-form" action="/login" method="POST">
+                            <input type="email" name="email" placeholder="Email">
+                            <input type="password" name="password" placeholder="Password">
+                            <input class="btn-submit btn-primary" type="submit">
+                        </form>
+                </section>
+            </main>
+            <footer>
+                <div class="footer">
+                    <ul class="icons no-style">
+                        <li><a href="https://github.com/BigSuggs72" class="footer-icons" target="_blank"
+                        rel="noopener noreferrer"><span class="label">Github</span></a></li>
+                    </ul>
+                    <ul class="copyright no-style">
+                        <li>&copy; Dasdev. All rights reserved</li>
+                    </ul>
+        </div>
+    </footer>
 <!-- <body>
     <% if (locals.messages.errors) { %>
         <% messages.errors.forEach( el => { %>

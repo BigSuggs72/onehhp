@@ -1,59 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400;500;600;700&display=swap"
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400;500;600;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css">
-    <title>BeActive</title>
-</head>
-<body>
-    <div class="page-layout">
-        <header>
-            <nav class="nav-list">
-                <a class="logo" href="/">
-                    <img src="https://media.istockphoto.com/photos/red-dumbbell-weights-picture-id173926553?s=612x612" alt="weights">
-                </a>
-                <span>BeActive</span>
-            </nav>
-        </header>
-        <main>
-            <section class="info-section">
-                <div class="info-container">
-                    <h1>BeActive</h1>
-                    <h2>Customise your exercises for you!!!!</h2>
-                    <ul class="btn-login-signup">
-                        <% if (currentUser) { %>
-                            <li><a href="/logout" class="btn-link btn-primary"> Logout</a></li>
+        <link rel="stylesheet" href="/css/style.css">
+        <title>BeActive</title>
+    </head>
+    <body>
+        <div class="page-layout">
+            <header>
+                <nav class="nav-list">
+                    <a class="logo" href="/">
+                        <img src="https://media.istockphoto.com/photos/red-dumbbell-weights-picture-id173926553?s=612x612" alt="weights">
+                    </a>
+                    <span>BeActive</span>
+                </nav>
+            </header>
+            <main>
+                <section class="info-section">
+                    <div class="info-container">
+                        <h1>BeActive</h1>
+                        <h2>Customise your exercises for you!!!!</h2>
+                        <ul class="btn-login-signup">
+                            <% if (currentUser) { %>
+                                <li><a href="/logout" class="btn-link btn-primary"> Logout</a></li>
                             <% } else { %>
                                 <li><a href="/login" class="btn-link btn-primary btn-indexp"> Login</a></li>
                                 <li><a href="/signup" class="btn-link btn-secondary btn-indexs"> Signup</a></li>
                                 <% } %>
-                    </ul>
+                        </ul>
                     <!-- <a href="/login" class="btn-link btn-primary"> Login</a>
                     <a href="/signup" class="btn-link btn-primary"> SignUp</a> -->
-                </div>
-                <div class="image-container">
-                    <!-- <img src="https://images.unsplash.com/photo-1599552683573-9dc48255fe85?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGV4ZXJjaXNlfGVufDB8fDB8fA%3D%3D&w=1000&q=80" alt="manwoman"> -->
-                    <img src="https://images.pexels.com/photos/8939919/pexels-photo-8939919.jpeg" alt="test">
-                </div>
-            </section>
-        </main>
-        <footer>
-            <div class="footer">
-                <ul class="icons no-style">
-                    <li><a href="https://github.com/BigSuggs72" class="footer-icons" target="_blank"
+                    </div>
+                    <div class="image-container">
+                        <!-- <img src="https://images.unsplash.com/photo-1599552683573-9dc48255fe85?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGV4ZXJjaXNlfGVufDB8fDB8fA%3D%3D&w=1000&q=80" alt="manwoman"> -->
+                        <img src="https://images.pexels.com/photos/8939919/pexels-photo-8939919.jpeg" alt="test">
+                    </div>
+                </section>
+            </main>
+            <footer>
+                <div class="footer">
+                    <ul class="icons no-style">
+                        <li><a href="https://github.com/BigSuggs72" class="footer-icons" target="_blank"
                             rel="noopener noreferrer"><span class="label">Github</span></a></li>
-                </ul>
-                <ul class="copyright no-style">
-                    <li>&copy; Dasdev. All rights reserved</li>
-                </ul>
-            </div>
-        </footer>
-    </div>
-</body>
+                    </ul>
+                    <ul class="copyright no-style">
+                        <li>&copy; Dasdev. All rights reserved</li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+    </body>
 </html>
