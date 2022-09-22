@@ -7,9 +7,9 @@ router.get('/', ensureAuth, exerciseController.getExercise)
 
 router.post('/createExercise', exerciseController.createExercise)
 
-router.put('/markComplete', exerciseController.markComplete)
+// router.put('/markComplete', exerciseController.markComplete)
 
-router.put('/markIncomplete', exerciseController.markIncomplete)
+// router.put('/markIncomplete', exerciseController.markIncomplete)
 
 router.delete('/deleteExercise', exerciseController.deleteExercise)
 
