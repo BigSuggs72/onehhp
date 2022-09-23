@@ -1,38 +1,30 @@
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: 'Lucida Sans',
+    'Lucida Sans Regular',
+    'Lucida Grande',
+    'Lucida Sans Unicode',
+    Geneva,
+    Verdana,
+    sans-serif;
+  color: black;
 }
 
 body {
-    font-family: 'Edu TAS Beginner';
+  font-family: 'Edu TAS Beginner';
+  width: 100%;
+  min-height: 100vh;
 }
+
 
 /* grid layout for index page */
-
-.page-layout {
-  height: 100vh;
-  display: grid;
-  grid-template-rows: 5rem 1fr 4rem;
-  grid-template-columns: auto;
-  grid-template-areas:
-    "header"
-    "main"
-    "footer";
-}
-
-header {
-  grid-area: header;
-}
-
-main {
-  grid-area: main;
-}
-
-footer {
-  grid-area: footer;
-}
 
 
 .nav-list {
@@ -51,12 +43,6 @@ footer {
   max-width: 35px;
 }
 
-/* .btn-login-signup {
-  padding-top: 30px;
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-} */
 
 /* MAIN SECTION*/
 
@@ -85,7 +71,7 @@ footer {
 }
 
 
-.image-container img{
+.image-container img {
   width: 400px;
   height: 600px;
   padding: 20px 20px 0 0;
@@ -114,193 +100,135 @@ footer {
 }
 
 
-
-/* FOOTER */
-.footer {
-  display: flex;
-  justify-content: center;
-  padding: 10px 0;
-  min-height: 100%;
-  max-height: 100%;
-  font-weight: bold;
-  background:#7ea6d2;
-}
-
-.no-style {
-  list-style: none;
-}
-
-
-.copyright {
-  padding: 10px 0 0 30px;
-}
-
 /* Login and Signup page */
 
 /* error message */
 
 .alert {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: red;
 }
 
 
 
-.login, .signup {
-    color: #000;
-    width: 600px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: #fff;
-    border-radius: 5px;
-    width: 95%;
-    max-width: 500px;
-    margin: 100px 0 20px 0;
-    -moz-box-shadow: 0 0 10px 2px gray;
-    -webkit-box-shadow: 0 0 10px 2px gray;
-    box-shadow: 0 0 10px 2px gray;
-    padding: 25px;
-  }
-  
-  #login-form, #signup-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: #fff;
-    border-radius: 5px;
-    width: 95%;
-    max-width: 350px;
-    margin: 50px auto;
-    padding: 25px;
-  }
-  
-  #login-form {
-    align-items: center;
-  }
+.login,
+.signup {
+  color: #000;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  border-radius: 5px;
+  width: 95%;
+  max-width: 500px;
+  margin: 100px 0 20px 0;
+  -moz-box-shadow: 0 0 10px 2px gray;
+  -webkit-box-shadow: 0 0 10px 2px gray;
+  box-shadow: 0 0 10px 2px gray;
+  padding: 25px;
+}
+
+#login-form,
+#signup-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  border-radius: 5px;
+  width: 95%;
+  max-width: 350px;
+  margin: 50px auto;
+  padding: 25px;
+}
+
+#login-form {
+  align-items: center;
+}
 
 
 /* General styling for forms */
 
-input[type="text"], input[type="email"], input[type="password"] {
-    font-family: "Edu TAS Beginner", sans-serif;
-    font-size: 1.25rem;
-    margin: 0 0 10px 0;
-    padding: 5px;
-    width: 15rem;
-    height: 2rem;
-    border: 1px solid #889397;
-    border-radius: 3px;
-  }
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  font-family: "Edu TAS Beginner", sans-serif;
+  font-size: 1.25rem;
+  margin: 0 0 10px 0;
+  padding: 5px;
+  width: 15rem;
+  height: 2rem;
+  border: 1px solid #889397;
+  border-radius: 3px;
+}
 
 
 /* used on all form-submit buttons (login, signup, books) */
-.btn-submit {      
-    border-radius: 10px;
-    padding: .5rem 1.5rem;
-    font: inherit;  
-    cursor: pointer;
-    border: none;
-    align-self: center;
-    cursor: pointer;
-    text-decoration: none;
-  }
-  
-  .btn-primary {
-    background: #3a7fdf;
-    color: #fff;
-  }
-  
-  .btn-secondary {
-    background-color: #F7B733;
-    color: #000;
-  }
-  
-  .btn-primary:hover {
-    background: #b6e1e9;
-    color: #000;
-  }
-  
-  .btn-secondary:hover {
-    background: #f4d79d;
-    color: #000;
-  }
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.completed{
-    text-decoration: line-through;
-    color: gray;
+.btn-submit {
+  border-radius: 10px;
+  padding: .5rem 1.5rem;
+  font: inherit;
+  cursor: pointer;
+  border: none;
+  align-self: center;
+  cursor: pointer;
+  text-decoration: none;
 }
-.not{
-    text-decoration: underline;
+
+.btn-primary {
+  background: #3a7fdf;
+  color: #fff;
+}
+
+.btn-secondary {
+  background-color: #F7B733;
+  color: #000;
+}
+
+.btn-primary:hover {
+  background: #b6e1e9;
+  color: #000;
+}
+
+.btn-secondary:hover {
+  background: #f4d79d;
+  color: #000;
 }
 
 
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.not {
+  text-decoration: underline;
+}
 
 
 .layout {
-    color: white;
-    width: 600px;
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    width: 600px;
-    padding: 20px;
-    transform: translate(-50%, -50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  color: white;
+  width: 600px;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  width: 600px;
+  padding: 20px;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 h1 {
-    margin-bottom: 20px;
-    padding: 10px;
-    font-size: 4rem;
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 4rem;
 }
 
 a {
-    padding: 10px;
-    font-size: 2rem;
+  padding: 10px;
+  font-size: 2rem;
 }
