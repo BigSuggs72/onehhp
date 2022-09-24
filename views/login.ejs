@@ -23,7 +23,6 @@
                     </div>
                 </nav>
             </header>
-<<<<<<< HEAD
             <main class="container">
                 <div class="row justify-content-center">
                     <section class="col-6 mt-5">
@@ -59,28 +58,6 @@
                             </form>
                     </section>
                 </div>
-=======
-            <main>
-                    <% if (locals.messages.errors) { %>
-                    <% messages.errors.forEach( el => { %>
-                <div class="alert alert-danger"><%= el.msg %></div>
-                    <% }) %>    
-                    <% } %>
-                    <% if (locals.messages.info) { %>
-                    <% messages.info.forEach( el => { %>
-                <div class="alert alert-danger"><%= el.msg %></div>
-                    <% }) %>    
-                    <% } %>
-
-                <section class="login" id="login-form">
-                    <h1>Login</h1>
-                        <form id="login-form" action="/login" method="POST">
-                            <input type="email" name="email" placeholder="Email">
-                            <input type="password" name="password" placeholder="Password">
-                            <input class="btn-submit btn-primary" type="submit">
-                        </form>
-                </section>
->>>>>>> 409c2e6bdddd0362c859f6b87e863fff975e74cc
             </main>
         </div>
     </body>

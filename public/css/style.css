@@ -35,7 +35,6 @@ body {
   min-height: 100vh;
 }
 
-<<<<<<< HEAD
 /* NAV SECTION */
 
 .nav-logo {
@@ -56,60 +55,6 @@ body {
 
 .main {
   margin: 50px 100px 50px 0;
-=======
-
-/* grid layout for index page */
-
-
-.nav-list {
-  display: flex;
-  justify-content: center;
-  min-height: 100%;
-  max-height: 100%;
-  padding: 1rem;
-  background-color: #7ea6d2;
-  font-size: 50px;
-}
-
-.logo img {
-  margin-right: auto;
-  max-height: 100%;
-  max-width: 35px;
-}
-
-
-/* MAIN SECTION*/
-
-.info-section {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 2rem;
-  padding: 40px 20px 20px 20px;
-  max-height: 100vh;
-  color: #000;
-}
-
-
-.info-container {
-  width: 30%;
-  text-align: center;
-}
-
-.info-container h1 h2 {
-  width: 200px;
-  margin: 50px;
-  width: 100px;
-  height: 100px;
-}
-
-
-.image-container img {
-  width: 400px;
-  height: 600px;
-  padding: 20px 20px 0 0;
->>>>>>> 409c2e6bdddd0362c859f6b87e863fff975e74cc
   border-radius: 50px;
 }
 
