@@ -5,92 +5,52 @@
     box-sizing: border-box;
 }
 
+html {
+  font-size: 16px;
+  font-family: 'Lucida Sans',
+    'Lucida Sans Regular',
+    'Lucida Grande',
+    'Lucida Sans Unicode',
+    Geneva,
+    Verdana,
+    sans-serif;
+  color: black;
+}
+
 body {
-    font-family: 'Edu TAS Beginner';
+  font-family: 'Edu TAS Beginner';
+  width: 100%;
+  min-height: 100vh;
 }
 
-/* grid layout for index page */
+/* NAV SECTION */
 
-.page-layout {
-  height: 100vh;
-  display: grid;
-  grid-template-rows: 5rem 1fr 4rem;
-  grid-template-columns: auto;
-  grid-template-areas:
-    "header"
-    "main"
-    "footer";
+.nav-logo {
+    font-weight: bold;
+    position: absolute;
+    left: 50px;
+    color: red;
 }
 
-header {
-  grid-area: header;
-}
-
-main {
-  grid-area: main;
-}
-
-footer {
-  grid-area: footer;
+.nav-btn {
+    position: absolute;
+    right: 50px;
 }
 
 
-.nav-list {
-  display: flex;
-  justify-content: center;
-  min-height: 100%;
-  max-height: 100%;
-  padding: 1rem;
-  background-color: #7ea6d2;
-  font-size: 50px;
-}
-
-.logo img {
-  margin-right: auto;
-  max-height: 100%;
-  max-width: 35px;
-}
-
-/* .btn-login-signup {
-  padding-top: 30px;
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-} */
 
 /* MAIN SECTION*/
 
-.info-section {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 2rem;
-  padding: 40px 20px 20px 20px;
-  max-height: 100vh;
-  color: #000;
-}
-
-
-.info-container {
-  width: 30%;
-  text-align: center;
-}
-
-.info-container h1 h2 {
-  width: 200px;
-  margin: 50px;
-  width: 100px;
-  height: 100px;
-}
-
-
-.image-container img{
-  width: 400px;
-  height: 600px;
-  padding: 20px 20px 0 0;
+.main {
+  margin: 50px 100px 50px 0;
   border-radius: 50px;
 }
+
+
+.main-img {
+  border-radius: 20px;
+}
+
 
 
 /* Buttons */
@@ -113,27 +73,6 @@ footer {
   color: #fff;
 }
 
-
-
-/* FOOTER */
-.footer {
-  display: flex;
-  justify-content: center;
-  padding: 10px 0;
-  min-height: 100%;
-  max-height: 100%;
-  font-weight: bold;
-  background:#7ea6d2;
-}
-
-.no-style {
-  list-style: none;
-}
-
-
-.copyright {
-  padding: 10px 0 0 30px;
-}
 
 /* Login and Signup page */
 
