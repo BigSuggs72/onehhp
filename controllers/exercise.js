@@ -4,8 +4,16 @@ const Exercise = require('../models/Exercise')
 module.exports = {
     getProfile: async (req, res) => {
     try {
-      const posts = await Exercise.find({ user: req.user.id });
-      res.render("profile.ejs", { posts: posts, user: req.user });
+      const exercises = await Exercise.find({ user: req.user.id });
+      res.render("profile.ejs", { exercises: exercises, user: req.user });
+    } catch (err) {
+      console.log(err);
+    }
+  },
+    getCatalog: async (req, res) => {
+    try {
+      const exercises = await Post.find().sort({ createdAt: "desc" }).lean();
+      res.render("catalog.ejs", { exercises: exercises });
     } catch (err) {
       console.log(err);
     }
