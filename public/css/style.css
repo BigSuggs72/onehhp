@@ -54,7 +54,7 @@ body {
 /* MAIN SECTION*/
 
 .main {
-  margin: 50px 100px 50px 0;
+  margin: 50px 150px 50px 0;
   border-radius: 50px;
 }
 
@@ -99,7 +99,7 @@ body {
 
 
 
-.login,
+/* .login,
 .signup {
   color: #000;
   width: 600px;
@@ -136,7 +136,7 @@ body {
 
 
 /* General styling for forms */
-
+/* 
 input[type="text"],
 input[type="email"],
 input[type="password"] {
@@ -148,7 +148,7 @@ input[type="password"] {
   height: 2rem;
   border: 1px solid #889397;
   border-radius: 3px;
-}
+} */ */
 
 
 /* used on all form-submit buttons (login, signup, books) */
