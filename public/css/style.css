@@ -38,15 +38,9 @@ body {
 /* NAV SECTION */
 
 .nav-logo {
-    font-weight: bold;
     position: absolute;
-    left: 50px;
+    left: 780px;
     color: red;
-}
-
-.nav-btn {
-    position: absolute;
-    right: 50px;
 }
 
 
@@ -99,57 +93,6 @@ body {
 
 
 
-/* .login,
-.signup {
-  color: #000;
-  width: 600px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: #fff;
-  border-radius: 5px;
-  width: 95%;
-  max-width: 500px;
-  margin: 100px 0 20px 0;
-  -moz-box-shadow: 0 0 10px 2px gray;
-  -webkit-box-shadow: 0 0 10px 2px gray;
-  box-shadow: 0 0 10px 2px gray;
-  padding: 25px;
-}
-
-#login-form,
-#signup-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: #fff;
-  border-radius: 5px;
-  width: 95%;
-  max-width: 350px;
-  margin: 50px auto;
-  padding: 25px;
-}
-
-#login-form {
-  align-items: center;
-}
-
-
-/* General styling for forms */
-/* 
-input[type="text"],
-input[type="email"],
-input[type="password"] {
-  font-family: "Edu TAS Beginner", sans-serif;
-  font-size: 1.25rem;
-  margin: 0 0 10px 0;
-  padding: 5px;
-  width: 15rem;
-  height: 2rem;
-  border: 1px solid #889397;
-  border-radius: 3px;
-} */ */
-
 
 /* used on all form-submit buttons (login, signup, books) */
 .btn-submit {
@@ -193,7 +136,7 @@ input[type="password"] {
   text-decoration: underline;
 }
 
-
+/* 
 .layout {
   color: white;
   width: 600px;
@@ -217,4 +160,4 @@ h1 {
 a {
   padding: 10px;
   font-size: 2rem;
-}
+} */
