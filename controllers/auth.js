@@ -89,7 +89,7 @@ const User = require('../models/User')
           if (err) {
             return next(err)
           }
-          res.redirect('/exercise')
+          res.redirect('/profile')
         })
       })
     })

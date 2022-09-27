@@ -13,13 +13,30 @@ module.exports = {
     getCatalog: async (req, res) => {
      try {
       const exercises = await Exercise.find().sort({ createdAt: "desc" }).lean();
-      res.render("catalog.ejs", { exercises: exercises });
+      res.render("catalog.ejs", { exercise: exercises });
     } catch (err) {
       console.log(err);
     }
   },
     getExercise: async (req,res)=>{
-        console.log(req.user)
+        const options = {
+	          method: 'GET',
+	          headers: {
+		          'X-RapidAPI-Key': '2b8b49260bmsh79c739bef7450e7p1d0dfejsnc1e3a5f2313e',
+		          'X-RapidAPI-Host': 'exercisedb.p.rapidapi.com'
+	          }
+          };
+
+            fetch('https://exercisedb.p.rapidapi.com/exercises', options)
+	          .then(response => response.json())
+	          .then(data => {
+		          console.log(data)
+	          })
+
+	          .catch(err => {
+		          console.error(err)
+	          });
+        // console.log(req.user)
         try{
             const exercise = await Exercise.findById(req.params.id);
             // const itemsLeft = await Todo.countDocuments({userId:req.user.id,completed: false})
