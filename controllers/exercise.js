@@ -21,9 +21,9 @@ module.exports = {
     getExercise: async (req,res)=>{
         console.log(req.user)
         try{
-            const exerciseItem = await Exercise.findById(req.params.id);
+            const exercise = await Exercise.findById(req.params.id);
             // const itemsLeft = await Todo.countDocuments({userId:req.user.id,completed: false})
-            res.render('exercise.ejs', {exercise: exerciseItem, user: req.user})
+            res.render('exercise.ejs', {exercise: exercise, user: req.user})
         }catch(err){
             console.log(err)
         }

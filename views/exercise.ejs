@@ -1,41 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Exercises</title>
-        <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@500&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-        <div class="page-layout">
-            <header>
-                <nav class="nav-list">
-                    <a class="logo" href="/">
-                        <img src="https://media.istockphoto.com/photos/red-dumbbell-weights-picture-id173926553?s=612x612"
-                            alt="weights">
-                    </a>
-                    <span>BeActive</span>
-                </nav>
-            </header>
-            <main>
-                <h1>Exercises</h1>
-                    <ul>
-                        <% exercise.forEach( el=> { %>
-                            <li class='exerciseItem' data-id='<%=el._id%>'>
-                            <span class='<%= el.completed === true ? ' completed' : 'not' %>'><%= el.exercise %></span>
-                            <span class='del'> Delete </span>
-                            </li>
-                        <% }) %>
-                    </ul>
-                    <form action="/exercise/createExercise" method='POST'>
-                        <input type="text" placeholder="Enter Todo Item" name='todoItem'>
-                        <input type="submit">
+<%- include('partials/header') -%>
+    <div class="container">
+        <div class="row justify-content-center mt-5">
+            <div class="col-6">
+                <h2>
+                    <%= exercise.name %>
+                </h2>
+                <img class="img-fluid" src="<%= exercise.image%>" />
+                <div class="row justify-content-between">
+                    <form class="col-1" action="/exercise/likePost/<%= exercise.id %>?_method=PUT" method="POST">
+                        <button class="btn btn-primary fa fa-heart" type="submit"></button>
                     </form>
-                    <a href="/logout" class="btn-link btn-primary"> Logout</a>
-            </main>
-            <script src="js/main.js"></script>
+                    <h3 class="col-3">Likes: <%= exercise.likes %>
+                    </h3>
+                    <%if(exercise.user==user.id){ %>
+                        <form action="/exercise/deletePost/<%= exercise.id %>?_method=DELETE" method="POST" class="col-3">
+                            <button class="btn btn-primary fa fa-trash" type="submit"></button>
+                        </form>
+                        <%}%>
+                </div>
+            </div>
+        
+                <div class="col-6 mt-5">
+                    <a class="btn btn-primary" href="/profile">Return to Profile</a>
+                    <a class="btn btn-primary" href="/feed">Return to Feed</a>
+                </div>
+            </div>
         </div>
-    </body>
-</html>
