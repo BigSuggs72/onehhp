@@ -17,7 +17,7 @@ html {
   color: black;
 }
 
-html {
+/* html {
   font-size: 16px;
   font-family: 'Lucida Sans',
     'Lucida Sans Regular',
@@ -27,7 +27,7 @@ html {
     Verdana,
     sans-serif;
   color: black;
-}
+} */
 
 body {
   font-family: 'Edu TAS Beginner';
@@ -39,7 +39,7 @@ body {
 
 .nav-logo {
     position: absolute;
-    left: 780px;
+    left: 900px;
     color: red;
 }
 
@@ -48,7 +48,7 @@ body {
 /* MAIN SECTION*/
 
 .main {
-  margin: 50px 150px 50px 0;
+  margin: 150px 250px 50px 0;
   border-radius: 50px;
 }
 
