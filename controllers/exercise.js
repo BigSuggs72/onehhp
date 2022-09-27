@@ -28,8 +28,7 @@ module.exports = {
             console.log(err)
         }
     },
-    createExercise: async (req, res)=>{
-            console.log(req.body)
+    createExercise: async (req, res) => {
         try {
             // Upload image to cloudinary
             const result = await cloudinary.uploader.upload(req.file.path);
@@ -38,7 +37,8 @@ module.exports = {
                                 name: req.body.name,
                                 image: result.secure_url,
                                 cloudinaryId: result.public_id,
-                                user: req.user.id,});
+                                user: req.user.id
+                              });
                                 
             console.log("Exercise has been added!");
             res.redirect("/profile");
