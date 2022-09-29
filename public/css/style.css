@@ -39,7 +39,7 @@ body {
 
 .nav-logo {
     position: absolute;
-    left: 900px;
+    left: 1200px;
     color: red;
 }
 
@@ -48,7 +48,7 @@ body {
 /* MAIN SECTION*/
 
 .main {
-  margin: 150px 250px 50px 0;
+  margin: 200px 300px 50px 0;
   border-radius: 50px;
 }
 
@@ -58,26 +58,32 @@ body {
 }
 
 
+/* MEDIA QUERIES*/
 
-/* Buttons */
-.btn-login-signup {
-  padding-top: 50px;
-  list-style: none;
-  display: flex;
-  justify-content: space-evenly;
+@media screen and (max-width: 1500px) {
+  .nav-logo {
+    position: absolute;
+    left: 800px
+  }
 }
 
-.btn-link {
-  /* used on <a> tags styled as buttons */
-  border-radius: 10px;
-  padding: .5rem 1.5rem;
-  text-decoration: none;
+@media screen and (max-width: 1200px) {
+  .nav-logo {
+    position: absolute;
+    left: 400px
+  }
 }
 
-.btn-primary {
-  background: #008F95;
-  color: #fff;
+@media screen and (max-width: 800px) {
+  .nav-logo {
+    position: absolute;
+    left: 100px
+  }
 }
+
+
+
+
 
 
 /* Login and Signup page */
@@ -90,6 +96,14 @@ body {
   align-items: center;
   color: red;
 }
+
+
+.form-label {
+  font-size: 1.5rem;
+}
+
+
+
 
 
 
@@ -136,28 +150,3 @@ body {
   text-decoration: underline;
 }
 
-/* 
-.layout {
-  color: white;
-  width: 600px;
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  width: 600px;
-  padding: 20px;
-  transform: translate(-50%, -50%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-h1 {
-  margin-bottom: 20px;
-  padding: 10px;
-  font-size: 4rem;
-}
-
-a {
-  padding: 10px;
-  font-size: 2rem;
-} */
