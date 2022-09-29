@@ -104,49 +104,11 @@ body {
 
 
 
+/* Footer */
 
-
-
-
-/* used on all form-submit buttons (login, signup, books) */
-.btn-submit {
-  border-radius: 10px;
-  padding: .5rem 1.5rem;
-  font: inherit;
-  cursor: pointer;
-  border: none;
-  align-self: center;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-.btn-primary {
-  background: #3a7fdf;
-  color: #fff;
-}
-
-.btn-secondary {
-  background-color: #F7B733;
-  color: #000;
-}
-
-.btn-primary:hover {
-  background: #b6e1e9;
-  color: #000;
-}
-
-.btn-secondary:hover {
-  background: #f4d79d;
-  color: #000;
+.foot {
+  margin-top: auto;
 }
 
 
-.completed {
-  text-decoration: line-through;
-  color: gray;
-}
-
-.not {
-  text-decoration: underline;
-}
 
