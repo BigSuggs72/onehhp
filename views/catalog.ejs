@@ -1,22 +1,5 @@
 <%- include('partials/header') -%>
-    <!-- <div class="container">
-        <div class="row justify-content-center mt-5">
-            <ul class="row list-unstyled">
-                <% for(var i=0; i<exercise.length; i++) {%>
-                    <li class="col-6 justify-content-between mt-5">
-                        <a href="/exercise/<%= exercise[i]._id%>">
-                            <img class="img-fluid" src="<%= exercise[i].image%>">
-                        </a>
-                    </li>
-                    <% } %>
-            </ul>
-        </div>
-    </div> -->
 
-
-
-
-    <div class="catalog">
         <div class="container card-container mt-5">
             <h1>Exercise</h1>
             <div class="row row-cols-1 row-cols-md-3 g-4">
@@ -28,12 +11,11 @@
                                 <h5 class="card-title">
                                     <%= exercise[i].title%>
                                 </h5>
-                                <a href="/exercise/<%= exercise[i]._id%>" class="btn btn-outline-primary">View Recipe</a>
+                                <a href="/exercise/<%= exercise[i]._id%>" class="btn btn-outline-primary">View Exercise</a>
                             </div>
                         </div>
                     </div>
                     <% } %>
             </div>
         </div>
-    </div>
     <%- include('partials/footer') -%>
