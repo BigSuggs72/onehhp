@@ -8,6 +8,6 @@ router.get('/:id', ensureAuth, exerciseController.getExercise)
 
 router.post('/createExercise', upload.single("file"), exerciseController.createExercise)
 
-router.delete('/deleteExercise', exerciseController.deleteExercise)
+router.delete('/deleteExercise/:id', exerciseController.deleteExercise)
 
 module.exports = router

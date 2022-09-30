@@ -46,13 +46,17 @@ module.exports = {
         }
     },
     deleteExercise: async (req, res)=>{
-        console.log(req.body.todoIdFromJSFile)
-        try{
-            await Exercise.findOneAndDelete({_id:req.body.todoIdFromJSFile})
-            console.log('Deleted Todo')
-            res.json('Deleted It')
-        }catch(err){
-            console.log(err)
-        }
-    }
+      try {
+        // Find post by id
+        let exercise = await Exercise.findById({ _id: req.params.id });
+        // Delete image from cloudinary
+        await cloudinary.uploader.destroy(exercise.cloudinaryId);
+        // Delete post from db
+        await Exercise.remove({ _id: req.params.id });
+        console.log("Deleted Post");
+        res.redirect("/profile");
+      } catch (err) {
+        res.redirect("/profile");
+      }
+    },
 }    

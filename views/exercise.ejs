@@ -12,8 +12,10 @@
                     </form>
                     <h3 class="col-3">Likes: <%= exercise.likes %>
                     </h3>
-                    <%if(exercise.user==user.id){ %>
-                        <form action="/exercise/deletePost/<%= exercise.id %>?_method=DELETE" method="POST" class="col-3">
+                    <%if(exercise.user == user.id){ %>
+                        <form action="/exercise/deleteExercise/<%= exercise.id %>?_method=DELETE" 
+                              method="POST" 
+                              class="col-3">
                             <button class="btn btn-primary fa fa-trash" type="submit"></button>
                         </form>
                         <%}%>
