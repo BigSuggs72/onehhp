@@ -32,14 +32,11 @@ body {
     color: red;
 }
 
-
+.card-container {
+  margin-top: 7rem;
+}
 
 /* MAIN SECTION*/
-
-.main {
-  margin: 200px 300px 50px 0;
-  border-radius: 50px;
-}
 
 
 .main-img {
@@ -48,7 +45,7 @@ body {
 
 
 /* MEDIA QUERIES*/
-
+/* 
 @media screen and (max-width: 1500px) {
   .nav-logo {
     position: absolute;
@@ -68,9 +65,12 @@ body {
     position: absolute;
     left: 100px
   }
+} */
+
+.cata-name {
+  font-size: 2rem;
+  text-align: center;
 }
-
-
 
 
 
@@ -88,14 +88,11 @@ body {
 
 .form-label {
   font-size: 1.5rem;
+  padding: 0;
 }
 
-
-
-/* Footer */
-
-.foot {
-  margin-top: auto;
+.btn-nav {
+  margin-right: .5rem;
 }
 
 
