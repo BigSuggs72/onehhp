@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -26,11 +25,6 @@ body {
 
 /* NAV SECTION */
 
-.nav-logo {
-    position: absolute;
-    left: 1200px;
-    color: red;
-}
 
 .card-container {
   margin-top: 7rem;
@@ -44,34 +38,10 @@ body {
 }
 
 
-/* MEDIA QUERIES*/
-/* 
-@media screen and (max-width: 1500px) {
-  .nav-logo {
-    position: absolute;
-    left: 800px
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  .nav-logo {
-    position: absolute;
-    left: 400px
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .nav-logo {
-    position: absolute;
-    left: 100px
-  }
-} */
-
 .cata-name {
   font-size: 2rem;
   text-align: center;
 }
-
 
 
 /* Login and Signup page */
@@ -96,4 +66,10 @@ body {
 }
 
 
+.foot {
+  margin:0;
+}
 
+.disclaimer, .copyright{
+  margin: 0;
+}
