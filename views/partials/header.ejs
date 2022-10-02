@@ -31,7 +31,11 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                     <% if (currentUser) { %>
-                    <a class="btn btn-primary btn-nav btn-lg" href="/logout" role="button">Logout</a>
+                    <a class="nav-link active px-3" aria-current="page" href="/catalog">Catalog</a>
+                    <a class="nav-link px-5" href="/profile">My Profile</a>
+                    <!-- <a class="nav-link" href="/bookmarks">Favorite Recipes</a>
+                    <a class="nav-link" href="/profile">Add Recipe</a> -->
+                    <a class="btn btn-primary btn-nav btn-lg mr-5 px-5" href="/logout" role="button">Logout</a>
                     <% } else { %>
                     <a class="btn btn-outline-success btn-nav btn-lg login-btn" href="/login" role="button">Login</a>
                     <a class="btn-sign-in btn btn-nav btn-outline-danger btn-lg ml-8" href="/signup" role="button">Sign up</a>

@@ -7,11 +7,11 @@
                 </h2>
                 <img class="img-fluid" src="<%= exercise.image%>" />
                 <div class="row justify-content-between">
-                    <form class="col-1" action="/exercise/likePost/<%= exercise.id %>?_method=PUT" method="POST">
+                    <!-- <form class="col-1" action="/exercise/likePost/<%= exercise.id %>?_method=PUT" method="POST">
                         <button class="btn btn-primary fa fa-heart" type="submit"></button>
-                    </form>
-                    <h3 class="col-3">Likes: <%= exercise.likes %>
-                    </h3>
+                    </form> -->
+                    <!-- <h3 class="col-3">Likes: <%= exercise.likes %>
+                    </h3> -->
                     <%if(exercise.user == user.id){ %>
                         <form action="/exercise/deleteExercise/<%= exercise.id %>?_method=DELETE" 
                               method="POST" 
@@ -19,11 +19,6 @@
                             <button class="btn btn-primary fa fa-trash" type="submit"></button>
                         </form>
                         <%}%>
-
-                    <div class="col-6 mt-5">
-                        <a class="btn btn-primary" href="/profile">Return to Profile</a>
-                        <a class="btn btn-primary" href="/catalog">Return to Catalog</a>
-                    </div>
                 </div>
             </div class="col-6">
         
