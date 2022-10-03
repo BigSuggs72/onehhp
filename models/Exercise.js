@@ -13,7 +13,11 @@ const ExerciseSchema = new mongoose.Schema({
     type: String,
     require: true,
   },
-  caption: {
+  notes: {
+    type: String,
+    required: true,
+  },
+  instructions: {
     type: String,
     required: true,
   },

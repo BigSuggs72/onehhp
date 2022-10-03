@@ -36,6 +36,8 @@ module.exports = {
                                 name: req.body.name,
                                 image: result.secure_url,
                                 cloudinaryId: result.public_id,
+                                notes: req.body.notes,
+                                instructions: req.body.instructions,
                                 user: req.user.id
                               });
                                 

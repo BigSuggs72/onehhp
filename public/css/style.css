@@ -25,6 +25,9 @@ body {
 
 /* NAV SECTION */
 
+.nav-link {
+  font-size: 1.4rem;
+}
 
 .card-container {
   margin-top: 7rem;
