@@ -26,22 +26,16 @@
             </div class="col-6">
                 <div class="col-md-6">
                     <h3 class="display-4">Instructions:</h3>
-                    <!-- <hr class="style1">
-                    <ul class="list-unstyled">
-                        <% for(var i=0; i<exercise.length; i++) {%>
-                            <li class="p-1 g-2">
-                                <%= exercise.notes[i] %>
-                            </li>
-                            <% } %>
-                    </ul>
-                    <h2>Instructions:</h2> -->
                     <hr class="style1">
                     <ol class="list-group list-group-numbered">
-                        <% for(var i=0; i<exercise.length; i++) {%>
+                        <li class="p-1">
+                            <%= exercise.instructions %>
+                        </li>
+                        <!-- <% for(var i=0; i<exercise.instructions.length; i++) {%>
                             <li class="p-1">
-                                <%= exercise.instructions[i] %>
+                                <%= exercise.instructions %>
                             </li>
-                            <% } %>
+                            <% } %> -->
                     </ol>
                 </div>
 
