@@ -13,7 +13,7 @@ module.exports = {
     getCatalog: async (req, res) => {
      try {
       const exercises = await Exercise.find().sort({ createdAt: "desc" }).lean();
-      res.render("catalog.ejs", { exercise: exercises });
+      res.render("catalog.ejs", { exercise: exercises, user: req.user });
     } catch (err) {
       console.log(err);
     }

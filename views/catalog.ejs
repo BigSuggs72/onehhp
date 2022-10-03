@@ -11,6 +11,10 @@
                                 <h5 class="card-title">
                                     <%= exercise[i].title%>
                                 </h5>
+                                <p class="card-text"><small class="text-muted">By: <%= user.userName %></small></p>
+                                <p class="card-text">
+                                    <%= exercise[i].notes %>
+                                </p>
                                 <a href="/exercise/<%= exercise[i]._id%>" class="btn btn-outline-primary">See Details</a>
                             </div>
                         </div>
