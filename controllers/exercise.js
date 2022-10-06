@@ -47,6 +47,20 @@ module.exports = {
             console.log(err);
         }
     },
+
+    // editExercise: async (req, res) => {
+    //     try {
+          
+    //     await Exercise.findByIdAndUpdate(
+    //             { _id: req.params.id }),
+                                
+    //         console.log("Exercise has been updated!");
+    //         res.redirect(`/exercise/${req.params.id}`);
+    //         } catch (err) {
+    //         console.log(err);
+    //     }
+    // },
+
     deleteExercise: async (req, res)=>{
       try {
         // Find post by id
