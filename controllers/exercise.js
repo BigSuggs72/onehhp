@@ -49,12 +49,13 @@ module.exports = {
     },
 
     editExercise: async (req, res) => {
+       
         try {
-          
-          await Exercise.findById({ _id: req.params.id,
+            
+          await Exercise.findByIdAndUpdate({ _id: req.params.id,
                                       name: req.body.name,
-                                      image: result.secure_url,
-                                      cloudinaryId: result.public_id,
+                                      // image: result.secure_url,
+                                      // cloudinaryId: result.public_id,
                                       notes: req.body.notes,
                                       instructions: req.body.instructions,
                                       user: req.user.id

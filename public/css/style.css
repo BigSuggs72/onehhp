@@ -33,7 +33,7 @@ html, body {
 }
 
 .card-container {
-  margin-top: 12rem;
+  margin-top: 10rem;
   min-height: 65vh;
 }
 
@@ -49,6 +49,20 @@ html, body {
   margin: 50px 0;
   font-size: 2rem;
   text-align: center;
+}
+
+/* Exercise page*/
+
+.edit {
+  margin-right: 20px;
+  width: 100px;
+  padding: 0;
+}
+
+.delete {
+  margin-left: 230px;
+  width: 90px;
+  padding: 0;
 }
 
 
