@@ -66,7 +66,7 @@ module.exports = {
               });
                                        
             console.log("Exercise has been updated!");
-            res.redirect('exercise');
+            res.redirect('/exercise');
             } catch (err) {
             console.log(err);
         }
