@@ -14,14 +14,14 @@
                         <!-- <form class="col-1" action="/exercise/editExercise/<%= exercise.id %>?_method=PUT" method="POST">
                         <button class="btn btn-success fa fa-save p-1" type="submit"></button>
                         </form>   
-                        <h5 class="col-3 edit">: Save</h5>
+                        <h5 class="col-3 edit">: Save</h5> -->
                   
                 <%if(exercise.user==user.id){ %>
                         <form class="col-1" action="/exercise/editExercise/<%= exercise.id %>?_method=PUT" method="POST">
                         <button class="btn btn-success fa fa-edit p-1" type="submit"></button>
                         </form>   
                         <h5 class="col-3 edit">: Edit</h5>
-                    <%} %> -->
+                    <%} %>
                 <%if(exercise.user == user.id){ %>
                         <h5 class="col-3 delete">Delete :</h5>
                         <form action="/exercise/deleteExercise/<%= exercise.id %>?_method=DELETE" 
