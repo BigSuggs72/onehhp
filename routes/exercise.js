@@ -6,7 +6,7 @@ const { ensureAuth } = require('../middleware/auth')
 
 router.get('/:id', ensureAuth, exerciseController.getExercise)
 
-router.get('/editExercise/:id', exerciseController.editExercise)
+router.get('/editExercise/:id', exerciseController.updateExercise)
 
 router.post('/createExercise', upload.single("file"), exerciseController.createExercise)
 
