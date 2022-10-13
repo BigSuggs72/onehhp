@@ -17,7 +17,7 @@
                         <h5 class="col-3 edit">: Save</h5> -->
                   
                 <%if(exercise.user==user.id){ %>
-                        <form class="col-1" action="/exercise/updateExercise/<%= exercise.id %>?_method=PUT" method="POST">
+                        <form class="col-1" action="/exercise/updateExercise/<%= exercise.id %>?" method="GET">
                         <button class="btn btn-success fa fa-edit p-1" type="submit"></button>
                         </form>   
                         <h5 class="col-3 edit">: Edit</h5>
