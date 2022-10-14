@@ -65,6 +65,12 @@ html, body {
   padding: 0;
 }
 
+/* EDIT Page*/
+
+
+.edit-space {
+  margin: 50px 0 0 150px;
+}
 
 /* Login and Signup page */
 
