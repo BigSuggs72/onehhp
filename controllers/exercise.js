@@ -52,7 +52,7 @@ module.exports = {
           try {
               const result = await cloudinary.uploader.upload(req.file.path);
 
-            await Exercise.findOneAndUpdate(
+            await Exercise.findByIdAndUpdate(
               { _id: req.params.id }, 
               {
                 $set: {  

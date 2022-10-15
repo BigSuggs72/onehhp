@@ -11,7 +11,7 @@
                                 <h5 class="card-title h3">
                                     <%= exercise[i].name%>
                                 </h5>
-                                <p class="card-text"><small class="text-muted">By: <%= exercise[i].user%></small></p>
+                                <p class="card-text"><small class="text-muted">By: <%= exercise[i].user == user.id%></small></p>
                                 <p class="card-text">
                                     <%= exercise[i].notes %>
                                 </p>

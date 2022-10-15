@@ -10,7 +10,7 @@ router.get('/updateExercise/:id', exerciseController.updateExercise)
 
 router.post('/createExercise', upload.single("file"), exerciseController.createExercise)
 
-router.post('/editExercise/:id', exerciseController.editExercise)
+router.put('/editExercise/:id', exerciseController.editExercise)
 
 router.delete('/deleteExercise/:id', exerciseController.deleteExercise)
 
