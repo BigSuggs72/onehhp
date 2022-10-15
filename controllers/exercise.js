@@ -74,7 +74,7 @@ module.exports = {
     updateExercise: async (req,res)=>{
         try{
             const exercise = await Exercise.findById(req.params.id);
-            // const itemsLeft = await Todo.countDocuments({userId:req.user.id,completed: false})
+            
             res.render('edit.ejs', {exercise: exercise, user: req.user})
         }catch(err){
             console.log(err)
