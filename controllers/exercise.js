@@ -71,6 +71,7 @@ module.exports = {
             console.log(err);
         }
     },
+    
     updateExercise: async (req,res)=>{
         try{
             const exercise = await Exercise.findById(req.params.id);
