@@ -50,15 +50,12 @@ module.exports = {
 
     editExercise: async (req, res) => {
           try {
-              const result = await cloudinary.uploader.upload(req.file.path);
-                
+            
             await Exercise.findByIdAndUpdate(
               { _id: req.params.id }, 
               {
                 $set: {  
                   name: req.body.name,
-                  image: result.secure_url,
-                  cloudinaryId: result.public_id,
                   notes: req.body.notes,
                   instructions: req.body.instructions,
                   user: req.user.id,
@@ -66,7 +63,7 @@ module.exports = {
               });
                                        
             console.log("Exercise has been updated!");
-            res.redirect('/exercise');
+            res.redirect('/catalog');
             } catch (err) {
             console.log(err);
         }
