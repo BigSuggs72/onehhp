@@ -51,7 +51,7 @@ module.exports = {
     editExercise: async (req, res) => {
           try {
               const result = await cloudinary.uploader.upload(req.file.path);
-
+                
             await Exercise.findByIdAndUpdate(
               { _id: req.params.id }, 
               {
