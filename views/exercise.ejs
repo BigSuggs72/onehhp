@@ -17,7 +17,7 @@
                         </form>   
                         <h5 class="col-3 edit">: Edit</h5>
                     <%} %>
-                <%if(exercise.user == user.id){ %>
+                <%if(exercise.user == user){ %>
                         <h5 class="col-3 delete">Delete :</h5>
                         <form action="/exercise/deleteExercise/<%= exercise.id %>?_method=DELETE" 
                               method="POST" 
